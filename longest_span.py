@@ -13,7 +13,7 @@ def parse_bed(bed_string):
     else:
         chrom_span = chrom_end - chrom_start
         return {'chrom': chrom, 'span': chrom_span}
-
+#print now this
 def print_bed(bed_dict):
     if bed_dict is not None:
         print 'Chrom: {}, Span {}'.format(bed_dict['chrom'], bed_dict['span'])
